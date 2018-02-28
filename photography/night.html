@@ -1,32 +1,33 @@
 <html>
 <head>
+
+<title>Night</title>
+
 <style>
 /* http://lea.verou.me/css3patterns/# */
 body {
   background-color:black;
-  background-image:
+  /* background-image:
   radial-gradient(rgba(255,255,255,.2) 2px, transparent 40px),
   radial-gradient(rgba(255,255,255,.15) 1px, transparent 30px),
   radial-gradient(rgba(255,255,255,.1) 2px, transparent 40px),
   radial-gradient(rgba(255,255,255,.15) 1px, transparent 30px);
   background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; */
 }
 
 div.gallery {
     margin: 5px;
-    border: 1px solid #000;
+    border: 1px transparent;
     float: left;
     width: 500px;
     transition: .2s;
 }
 
-div#freedom {
-  width: 400px;
-}
 
 div.gallery:hover {
-    border: 1px solid #777;
+  transform: scale(1.1);
+  border: 1px transparent;
 }
 
 div.gallery img {
@@ -39,35 +40,56 @@ div.desc {
     text-align: center;
 }
 
-
-div.gallery:hover {
-  transform: scale(1.1);
+div#freedom {
+  width: 400px;
 }
 
 </style>
 </head>
 <body>
 
+<header>
+  <div id="name">
+    Matthew Jeng
+  </div>
+  <nav>
+    <ul>
+      <li><a href="night.html">Night</a></li>
+      <li><a href="day.html">Day</a></li>
+    </ul>
+  </nav>
+</header>
+
 <div class="gallery" id="freedom">
   <a target="_blank" href="images/freedom_tower.jpg">
     <img src="images/freedom_tower.jpg" alt="Freedom Tower">
   </a>
-  <div class="desc">Taken on the banks of the Hudson</div>
 </div>
 
 <div class="gallery" id="hudson">
   <a target="_blank" href="images/hudson.jpg">
     <img src="images/hudson.jpg" alt="Hudson">
   </a>
-  <div class="desc">Taken on the banks of the Hudson facing the other way</div>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="images/lawrence_dna.jpg">
     <img src="images/lawrence_dna.jpg" alt="Lawrence">
   </a>
-  <div class="desc">Lawrence Hall of Science in UC Berkeley</div>
 </div>
+
+<div class="gallery">
+  <a target="_blank" href="images/ornament.jpg">
+    <img src="images/ornament.jpg" alt="Ornament">
+  </a>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/miami-highrise.jpg">
+    <img src="images/miami-highrise.jpg" alt="Highrise">
+  </a>
+</div>
+
 
 </body>
 </html>
