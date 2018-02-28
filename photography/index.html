@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+/* http://lea.verou.me/css3patterns/# */
+body {
+  background-color:black;
+  background-image:
+  radial-gradient(rgba(255,255,255,.2) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.15) 1px, transparent 30px),
+  radial-gradient(rgba(255,255,255,.1) 2px, transparent 40px),
+  radial-gradient(rgba(255,255,255,.15) 1px, transparent 30px);
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #000;
+    float: left;
+    width: 500px;
+    transition: .2s;
+}
+
+div#freedom {
+  width: 400px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+div.gallery:hover {
+  transform: scale(1.1);
+}
+
+</style>
+</head>
+<body>
+
+<div class="gallery" id="freedom">
+  <a target="_blank" href="images/freedom_tower.jpg">
+    <img src="images/freedom_tower.jpg" alt="Freedom Tower">
+  </a>
+  <div class="desc">Taken on the banks of the Hudson</div>
+</div>
+
+<div class="gallery" id="hudson">
+  <a target="_blank" href="images/hudson.jpg">
+    <img src="images/hudson.jpg" alt="Hudson">
+  </a>
+  <div class="desc">Taken on the banks of the Hudson facing the other way</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/lawrence_dna.jpg">
+    <img src="images/lawrence_dna.jpg" alt="Lawrence">
+  </a>
+  <div class="desc">Lawrence Hall of Science in UC Berkeley</div>
+</div>
+
+</body>
+</html>
