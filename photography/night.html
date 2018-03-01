@@ -16,33 +16,72 @@ body {
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; */
 }
 
-div.gallery {
-    margin: 5px;
-    border: 1px transparent;
-    float: left;
-    width: 500px;
-    transition: .2s;
+/* nav {
+  display: flex;
+  position: relative;
+} */
+
+ul {
+  list-style-type: none;
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  overflow: auto;
+  /* -webkit-padding-start: 0px; */
+  padding-left: 0px;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  color: blue;
+  width: 100%;
+}
+
+div#gallery {
+  margin-left: 16%;
+}
+
+div.photo {
+  display: block;
+  position: auto;
+  /* margin: 5px; */
+  /* border: 1px transparent; */
+  /* margin-left: 15%; */
+  /* padding: 5%; */
+  float: left;
+  transition: .2s;
+}
+
+div.horizontal img {
+  width: 500px;
+  height: auto;
+}
+
+div.vertical img {
+  height: 500px;
+  width: auto;
 }
 
 
-div.gallery:hover {
+div.photo:hover {
   transform: scale(1.1);
   border: 1px transparent;
 }
 
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
+/* div.gallery img {
+  width: 100%;
+  height: auto;
+} */
 
 div.desc {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
-div#freedom {
+/* div#freedom {
   width: 400px;
-}
+} */
 
 </style>
 </head>
@@ -60,36 +99,39 @@ div#freedom {
   </nav>
 </header>
 
-<div class="gallery" id="freedom">
-  <a target="_blank" href="images/freedom_tower.jpg">
-    <img src="images/freedom_tower.jpg" alt="Freedom Tower">
-  </a>
-</div>
+<div id="gallery">
 
-<div class="gallery" id="hudson">
-  <a target="_blank" href="images/hudson.jpg">
-    <img src="images/hudson.jpg" alt="Hudson">
-  </a>
-</div>
+  <div class="photo vertical" id="freedom">
+    <a target="_blank" href="images/freedom_tower.jpg">
+      <img src="images/freedom_tower.jpg" alt="Freedom Tower">
+    </a>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="images/lawrence_dna.jpg">
-    <img src="images/lawrence_dna.jpg" alt="Lawrence">
-  </a>
-</div>
+  <div class="photo horizontal" id="hudson">
+    <a target="_blank" href="images/hudson.jpg">
+      <img src="images/hudson.jpg" alt="Hudson">
+    </a>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="images/ornament.jpg">
-    <img src="images/ornament.jpg" alt="Ornament">
-  </a>
-</div>
+  <div class="photo horizontal">
+    <a target="_blank" href="images/lawrence_dna.jpg">
+      <img src="images/lawrence_dna.jpg" alt="Lawrence">
+    </a>
+  </div>
 
-<div class="gallery">
-  <a target="_blank" href="images/miami-highrise.jpg">
-    <img src="images/miami-highrise.jpg" alt="Highrise">
-  </a>
-</div>
+  <div class="photo horizontal">
+    <a target="_blank" href="images/ornament.jpg">
+      <img src="images/ornament.jpg" alt="Ornament">
+    </a>
+  </div>
 
+  <div class="photo vertical">
+    <a target="_blank" href="images/miami-highrise.jpg">
+      <img src="images/miami-highrise.jpg" alt="Highrise">
+    </a>
+  </div>
+
+</div>
 
 </body>
 </html>
