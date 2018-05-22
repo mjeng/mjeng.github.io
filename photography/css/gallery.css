@@ -1,7 +1,8 @@
 /* http://lea.verou.me/css3patterns/# */
 
-
+/* sidebar *********************/
 ul {
+  display: table;
   list-style-type: none;
   height: 100%;
   width: 15%;
@@ -13,11 +14,21 @@ ul {
 li a {
   display: block;
   text-align: center;
-  color: blue;
+  /* line-height: ; */
+  /* vertical-align: middle;  */
+  background-color: grey;
+  height: 10%;
   width: 100%;
 }
 
-div.gallery {
+li a div {
+  display: block;
+  /* height: 100%; */
+  line-height: 100%;
+}
+
+/* photos ********************/
+div#gallery {
   margin-left: 16%;
 }
 
