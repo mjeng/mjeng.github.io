@@ -21,3 +21,12 @@ html, body {
 .center p, .center h1 {
     margin: 0 0 0 0;
 }
+
+.links a {
+    text-decoration: none;
+    color: black;
+}
+
+.links a:hover {
+    color: grey;
+}
