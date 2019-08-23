@@ -1,0 +1,1 @@
+window.location.replace("https://lahacks19-1553933617332.appspot.com");
